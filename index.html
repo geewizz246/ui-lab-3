@@ -9,16 +9,63 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="row navbar navbar-expand-md navbar-light bg-light">
+            <button class="mr-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="GIMP-DESIGN/assets/logo-placeholder.png" width="40" height="40" alt="Logo">
+            </a>
+
+            <!-- Main Nav Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRACK REQUESTS</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Main Nav Items -->
+
+            <!-- Sign Up & Login Buttons -->
+            <div class="ml-auto mr-1">
+                <a class="btn btn-primary btn-nav-sign-up" href="pages/sign-up.html">SIGN UP</a>
+                <a class="btn-login ml-2" href="#">LOGIN</a>
+            </div>
+            <!-- END Sign Up & Login Buttons -->
+            
+        </nav>
+        <!-- END Navbar -->
+
+        <!-- Placeholder Info -->
+        <div class="card my-4">
             <div class="card-body"> 
-                <h4 class="card-title">Hello world!</h4>
+                <h4 class="card-title">HOME</h4>
+                <h5 class="card-subtitle mb-2 text-muted">Go to page:</h5>
+
+                <a href="pages/sign-up.html" class="btn btn-primary">Sign Up</a>
             </div>
         </div>
+        <!-- END Placeholder Info -->
     </div>
-
+    
     <!-- Bootstrap JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+
+body {
+    font-family: 'Archivo', sans-serif !important;
+}
+
+
+/**************************************************************************************************************
+ *  NAV ITEMS
+ **************************************************************************************************************/
+.navbar {
+    background-color: #EDEDED;
+}
+
+/* Sign Up Button */
+.btn.btn-nav-sign-up {
+    color: #ffffff;
+    background-color: #3E98B7;
+    border-color: #3E98B7;
+}
+.btn.btn-nav-sign-up:hover {
+    color: #ffffff;
+    background-color: #3788A4;
+    border-color: #317992;
+}
+.btn.btn-nav-sign-up:focus, .btn.btn-nav-sign-up.focus {
+    box-shadow: 0 0 0 0.2rem #255B6D;
+}
+.btn.btn-nav-sign-up.disabled, .btn.btn-nav-sign-up:disabled {
+    color: #ffffff;
+    background-color: #3E98B7;
+    border-color: #3E98B7;
+}
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled):active,
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled).active {
+    color: #ffffff;
+    background-color: #317992;
+    border-color: #2B6A80;
+}
+.show > .btn.btn-nav-sign-up.dropdown-toggle {
+    color: #ffffff;
+    background-color: #317992;
+    border-color: #2B6A80;
+}
+.show > .btn.btn-nav-sign-up.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(49, 122, 146, 0.5);
+}
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled):active:focus,
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(49, 122, 146, 0.5);
+}
+
+/* Login Button */
+.btn-login {
+    color: inherit;
+    text-decoration: none;
+}
+.btn-login:hover {
+     color: inherit; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
