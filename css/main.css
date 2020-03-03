@@ -4,6 +4,10 @@ body {
     font-family: 'Archivo', sans-serif !important;
 }
 
+.app-scheme {
+    color: #3E98B7;
+}
+
 
 /**************************************************************************************************************
  *  NAV ITEMS
@@ -59,4 +63,36 @@ body {
      color: inherit; 
      text-decoration:none; 
      cursor:pointer;  
+}
+
+
+
+
+
+
+
+
+/**************************************************************************************************************
+ *  HERO ITEMS
+ **************************************************************************************************************/
+.img-hero {
+    object-fit: cover;
+
+    height: 690px;
+}
+
+.sign-up-header p {
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    margin-top: -25px;
+}
+
+.btn-submit {
+    color: white;
+    background-color: #b73e6a;
+}
+
+.page-footer {
+    color: white;
+    background-color: #332c2b;
 }
