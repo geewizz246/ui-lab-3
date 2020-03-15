@@ -9,140 +9,168 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our CSS -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!-- Sign Up Header -->
-    <div class="sign-up-header container-fluid">
-        <div class="row">
-            <img class="img-logo mx-auto d-block" src="../imgs/logo-placeholder.png" alt="Logo">
-        </div>
-        <div class="row">
-            <p class="app-scheme mx-auto">Sign Up for Online Services</p>
-        </div>
-    </div>
-    <!-- END Sign Up Header -->
-
-    <!-- Sign Up Form -->
-    <div class="container">
-        <div class="row">
-            <form action="#" class="col-lg-7 col-md-9 mx-auto">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Prime Service Account #">
-                </div>
-                <div class="form-row mb-3">
-                    <div class="col pr-lg-3">
-                        <input type="text" class="form-control" placeholder="First Name">
+    <div class="sign-up-background">
+        <div class="row justify-content-center mx-auto py-5">
+            <div class="card col-xl-8 col-lg-9 col-md-10 col-11 shadow-lg">
+                <div class="card-body"> 
+                    <!-- Sign Up Header -->
+                    <div class="sign-up-header container-fluid">
+                        <div class="row">
+                            <img class="img-logo mx-auto d-block" src="../imgs/logo-placeholder.png" alt="Logo" width="150">
+                        </div>
+                        <div class="row">
+                            <p class="app-scheme mx-auto">Sign Up for Online Services</p>
+                        </div>
                     </div>
-                    <div class="col pl-3">
-                        <input type="text" class="form-control" placeholder="Last Name">
+                    <!-- END Sign Up Header -->
+
+                    <!-- Sign Up Form -->
+                    <div class="container">
+                        <div class="row">
+                            <form action="sign-up-success.html" class="col-lg-7 col-md-9 mx-auto">
+                                <div class="form-group">
+                                    <input id="sign-up-input-acct-num" class="form-control" type="text" placeholder="Prime Service Account #" pattern="[0-9]{6}" required>
+                                    <label for="sign-up-input-acct-num" class="label-sm">Refer to your 6 digit account number.</label>
+                                </div>
+                                <div class="form-row mb-3">
+                                    <div class="col pr-lg-3">
+                                        <input id="sign-up-input-first-name" class="form-control" type="text" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col pl-3">
+                                        <input id="sign-up-input-last-name" class="form-control" type="text"  placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <!-- Gender -->
+                                <div class="form-check form-check-inline mb-3">
+                                    <span class="pr-4">Gender: </span>
+                                    <input id="sign-up-input-gender-male" class="form-check-input" type="radio" name="sign-up-gender-radios" value="male" required>
+                                    <label class="form-check-label" for="sign-up-input-gender-male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input id="sign-up-input-gender-female" class="form-check-input" type="radio" name="sign-up-gender-radios" value="female" required>
+                                    <label class="form-check-label" for="sign-up-input-gender-female">Female</label>
+                                </div>
+                                <!-- END Gender -->
+                                <div class="form-group">
+                                    <input id="sign-up-input-username" class="form-control" type="text"  placeholder="Username" required>
+                                </div>
+                                <div class="form-group">
+                                    <input id="sign-up-input-email" class="form-control" type="email"  placeholder="Email (e.g. email@domain.com)" required>
+                                </div>
+                                <div class="form-group">
+                                    <input id="sign-up-input-phone" class="form-control" type="tel" placeholder="Phone (e.g. 800-123-4567)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+                                </div>
+                                <div class="form-group">
+                                    <input id="sign-up-input-password"  class="form-control" type="password"  placeholder="Password" required>
+                                    <label for="sign-up-input-password" class="label-sm">Make it nice and strong (at least 8 characters).</label>
+                                </div>
+                                <div class="form-group">
+                                    <input id="sign-up-input-confirm-password"  class="form-control" type="password"  placeholder="Confirm Password" required>
+                                </div>
+
+                                <div class="row my-4">
+                                    <button class="btn btn-submit py-3 mx-auto" type="submit">SIGN UP</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        
                     </div>
+                    <!-- END Sign Up Form -->
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Username">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email Address">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Confirm Password">
-                </div>
-
-                <!-- Gender -->
-                <div class="form-check form-check-inline">
-                    <span class="pr-4">Gender: </span>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Male</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Female</label>
-                </div>
-                <!-- END Gender -->
-            </form>
-        </div>
-
-        <div class="row my-4">
-            <a href="#" class="btn btn-submit mx-auto">SIGN UP</a>
-        </div>
-    </div>
-    <!-- END Sign Up Form -->
-
-    <br>
-    <img class="img-fluid w-100" src="../imgs/footer-img.png" alt="">
-    <!-- Footer -->
-    <footer class="page-footer font-small blue mt-6">
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-            <!-- Grid row -->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
-                </div>
-                <!-- END Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END Grid column -->
             </div>
-            <!-- Grid row -->
         </div>
-        <!-- Footer Links -->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+        <!-- Footer -->
+        <footer>
+            <img class="img-fluid w-100 mt-5" src="../imgs/footer-img.png" alt="Footer Image">
+            
+            <div class="footer-container">
+                <!-- Footer Links -->
+                <div class="container-fluid text-md-left pt-4">
+                    <!-- Grid row -->
+                    <div class="row d-md-flex justify-content-center justify-content-sm-around text-center text-sm-left">
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-6 mb-md-0 mb-3">
+                            <!-- Content -->
+                            <h5 class="font-weight-bold">Helpful Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="footer-link">Terms and Condition</a></li>
+                                <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                                <li><a href="#" class="footer-link">Customer Support</a></li>
+                                <li><a href="#" class="footer-link">Make a Request</a></li>
+                            </ul>
+                        </div>
+                        <!-- END Grid column -->
+
+                        <hr class="clearfix w-100 d-sm-none">
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-6 mb-md-0 mb-3">
+                            <!-- Links -->
+                            <h5 class="font-weight-bold">Information</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="footer-link">About Us</a></li>
+                                <li><a href="#" class="footer-link">Services</a></li>
+                                <li><a href="#" class="footer-link">Blog</a></li>
+                                <li><a href="#" class="footer-link">Testimontials</a></li>
+                                <li><a href="#" class="footer-link">Careers</a></li>
+                            </ul>
+                        </div>
+                        <!-- END Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-6 mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h5 class="font-weight-bold">Newsletter</h5>
+                            <input class="input-newsletter form-control form-control-sm mb-2" type="text" placeholder="Enter your email">
+                            <button class="btn btn-primary btn-sm">Subscribe</button>
+                        </div>
+                        <!-- END Grid column -->
+
+                        <hr class="clearfix w-100 d-sm-none">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-6 mb-md-0 mb-3">
+                            <!-- Links -->
+                            <h5 class="font-weight-bold">Contact Us</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li class="footer-link">Phone: (800) 555-3567</li>
+                                <li class="footer-link">Email: primeservice@gmail.com</li>
+                            </ul>
+
+                            <h5 class="font-weight-bold">Follow Us</h5>
+                            <ul class="list-inline list-unstyled text-secondary">
+                                <li class="list-inline-item">
+                                    <a class="text-reset social-link" href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-reset social-link" href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-reset social-link" href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2020 Prime Service
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer>
+        <!-- Footer -->
+    </div>
 
     <!-- Bootstrap JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
