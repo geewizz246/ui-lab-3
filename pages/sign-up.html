@@ -17,10 +17,10 @@
 <body>
     <div class="sign-up-background">
         <div class="row justify-content-center mx-auto py-5">
-            <div class="card col-xl-8 col-lg-9 col-md-10 col-11 shadow-lg">
+            <div class="card col-xl-6 col-lg-7 col-md-10 col-11 shadow-lg">
                 <div class="card-body"> 
                     <!-- Sign Up Header -->
-                    <div class="sign-up-header container-fluid">
+                    <div class="sign-up-header container-fluid mb-4">
                         <div class="row">
                             <img class="img-logo mx-auto d-block" src="../imgs/logo-placeholder.png" alt="Logo" width="150">
                         </div>
@@ -33,7 +33,7 @@
                     <!-- Sign Up Form -->
                     <div class="container">
                         <div class="row">
-                            <form action="sign-up-success.html" class="col-lg-7 col-md-9 mx-auto">
+                            <form action="sign-up-success.html" class="col-lg-10 col-md-9 mx-auto">
                                 <div class="form-group">
                                     <input id="sign-up-input-acct-num" class="form-control" type="text" placeholder="Prime Service Account #" pattern="[0-9]{6}" required>
                                     <label for="sign-up-input-acct-num" class="label-sm">Refer to your 6 digit account number.</label>
@@ -73,14 +73,28 @@
                                 <div class="form-group">
                                     <input id="sign-up-input-confirm-password"  class="form-control" type="password"  placeholder="Confirm Password" required>
                                 </div>
+                                <hr class="clearfix w-100">
+                                <h4>Mailing Address</h4>
+                                <div class="form-group">
+                                    <input id="sign-up-input-street-addr" class="form-control" type="text" placeholder="Street Address" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <input id="sign-up-input-city-addr" class="form-control" type="text" placeholder="City" required>
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <input id="sign-up-input-state-addr" class="form-control" type="text" placeholder="State" required>
+                                    </div>
+                                    <div class="form-group col-2">
+                                        <input id="sign-up-input-zip-addr" class="form-control" type="text" placeholder="Zip" required>
+                                    </div>
+                                </div>
 
                                 <div class="row my-4">
-                                    <button class="btn btn-submit py-3 mx-auto" type="submit">SIGN UP</button>
+                                    <button class="btn btn-submit px-3 mx-auto" type="submit">Sign Up</button>
                                 </div>
                             </form>
                         </div>
-
-                        
                     </div>
                     <!-- END Sign Up Form -->
                 </div>
@@ -129,7 +143,7 @@
                         <div class="col-md-3 col-6 mb-md-0 mb-4">
                             <!-- Links -->
                             <h5 class="font-weight-bold">Newsletter</h5>
-                            <input class="input-newsletter form-control form-control-sm mb-2" type="text" placeholder="Enter your email">
+                            <input class="input-newsletter col-6 form-control form-control-sm mb-2" type="text" placeholder="Enter your email">
                             <button class="btn btn-primary btn-sm">Subscribe</button>
                         </div>
                         <!-- END Grid column -->

@@ -157,13 +157,50 @@ body {
 }
 
 .container-about-us {
+    background-color: #e2eaed;
+}
+.card-about-us {
     position: relative;
     top: -50px;
+    z-index: 3;
 }
 
 .card-title-underline {
     border-top: 3px solid black;
     width: 60px;
+}
+
+.container-services {
+    background-color: white;
+    position: relative;
+    top: -100px;
+    padding: 115px 10em 25px;
+}
+
+.services-icon {
+    width: 130px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.container-projects {
+    position: relative;
+    top: -50px;
+    background-color: #333333;
+    padding: 2em 10em 3.5em;
+}
+.container-projects h3 {
+    color: white;
+    padding-bottom: 1em;
+}
+
+.project-city-img {
+    width: 375px;
+    height: 300px;
+    opacity: 0.6;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 5px 10px 3px black;
 }
 
 

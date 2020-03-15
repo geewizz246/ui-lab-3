@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="container-fluid mb-5">
+    <div class="container-fluid">
         <!-- Navbar -->
         <nav class="row navbar navbar-expand-md navbar-light bg-light">
             <button class="mr-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,9 @@
             
         </nav>
         <!-- END Navbar -->
+    </div>
 
+    <div class="container-fluid">
         <!-- Hero -->
         <div class="hero">
             <div class="row container-hero-img">
@@ -75,40 +77,113 @@
             </div>
         </div>
         <!-- END Hero -->
+    </div>
 
-        <!-- About Us -->
-        <div class="container-about-us row justify-content-center mx-auto">
-            <div class="card col-lg-10 col-md-9 col-sm-9 col-11 shadow-lg">
-                <div class="card-body"> 
-                    <h3 class="card-title text-center pt-3">ABOUT US</h3>
-                    <hr class="card-title-underline">
-                    <div class="row justify-content-center mb-4git">
-                        <p class="col-10 col-md-9 pt-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Egestas diam in arcu cursus. 
-                            Pretium lectus quam id leo in vitae turpis massa sed. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
-                            Sed augue lacus viverra vitae congue eu. Augue interdum velit euismod in pellentesque massa placerat. 
-                            Mi quis hendrerit dolor magna eget est lorem ipsum. Vitae sapien pellentesque habitant morbi. 
-                            Vel turpis nunc eget lorem dolor sed viverra. Fermentum et sollicitudin ac orci phasellus. Ac odio tempor orci dapibus.
-                        </p>
-                    </div>
-                    <div class="row justify-content-around">
-                        <div class="col-1"></div>
-                        <div class="col-3 text-center">
-                            <img src="imgs/about-us-dependable.svg" alt="Reliability Icon" width="120">
-                        </div>
-                        <div class="col-3 text-center">
-                            <img src="imgs/about-us-quality.svg" alt="Quality Icon" width="120">
-                        </div>
-                        <div class="col-3 text-center">
-                            <img src="imgs/about-us-affordable.svg" alt="Value Icon" width="120">
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
+    <!-- About Us -->
+    <div class="container-about-us row justify-content-center mx-auto">
+        <div class="card card-about-us col-lg-10 col-md-9 col-sm-9 col-11 shadow-lg">
+            <div class="card-body"> 
+                <h3 class="card-title text-center text-uppercase pt-3">About Us</h3>
+                <hr class="card-title-underline">
+                <div class="row justify-content-center mb-4">
+                    <p class="col-10 col-md-9 pt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Egestas diam in arcu cursus. 
+                        Pretium lectus quam id leo in vitae turpis massa sed. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. 
+                        Sed augue lacus viverra vitae congue eu. Augue interdum velit euismod in pellentesque massa placerat. 
+                        Mi quis hendrerit dolor magna eget est lorem ipsum. Vitae sapien pellentesque habitant morbi. 
+                        Vel turpis nunc eget lorem dolor sed viverra. Fermentum et sollicitudin ac orci phasellus. Ac odio tempor orci dapibus.
+                    </p>
                 </div>
-            </div>  
+                <div class="row justify-content-around">
+                    <div class="col-1"></div>
+                    <div class="col-3 text-center">
+                        <img src="imgs/about-us-dependable.svg" class="pb-2" alt="Reliability Icon" width="120">
+                        <h4 class="text-uppercase">Dependable</h4>
+                        <div class="row justify-content-center">
+                            <p class="pt-2 col-11">
+                                Risus pretium quam vulputate dignissim suspendisse in est. Lobortis scelerisque fermentum dui faucibus in ornare quam. 
+                                Faucibus interdum posuere lorem ipsum dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="imgs/about-us-quality.svg" class="pb-2" alt="Quality Icon" width="120">
+                        <h4 class="text-uppercase">Quality Service</h4>
+                        <div class="row justify-content-center">
+                            <p class="pt-2 col-11">
+                                Ullamcorper eget nulla facilisi etiam dignissim diam quis. 
+                                Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="imgs/about-us-affordable.svg" class="pb-2" alt="Value Icon" width="120">
+                        <h4 class="text-uppercase">Budget Friendly</h4>
+                        <div class="row justify-content-center">
+                            <p class="pt-2 col-11">
+                                Massa id neque aliquam vestibulum morbi blandit cursus risus at. 
+                                Euismod elementum nisi quis eleifend quam adipiscing. Pretium quam vulputate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- END About Us -->
+
+    <!-- Our Services -->
+    <div class="container-fluid container-services">
+        <h3 class="pt-3 text-uppercase">Our Services</h3>
+        <div class="row justify-content-around pb-4">
+            <div class="col-3 text-center">
+                <img src="imgs/heating-services.svg" alt="Heating Services Icon" class="services-icon">
+                Heating Systems
+            </div>
+            <div class="col-3 text-center">
+                <img src="imgs/electrician.svg" alt="Electrical Icon" class="services-icon">
+                Electrical Services
+            </div>
+            <div class="col-3 text-center">
+                <img src="imgs/plumbing.svg" alt="Plumbing Icon" class="services-icon">
+                Plumbing
+            </div>
+            <div class="col-3 text-center">
+                <img src="imgs/heavy-construction.svg" alt="Heavy Construction Icon" class="services-icon">
+                Heavy Construction
+            </div>
         </div>
-        <!-- END About Us -->
+        <div class="row justify-content-around">
+            <div class="col-3 text-center">
+                <img src="imgs/lawncare.svg" alt="Lawncare Icon" class="services-icon">
+                Lawn & Garden Care
+            </div>
+            <div class="col-3 text-center">
+                <img src="imgs/window-repair.svg" alt="Glass & Window Icon" class="services-icon">
+                Window Repairs
+            </div>
+            <div class="col-3 text-center">
+                <img src="imgs/roof-repair.svg" alt="Roof Repair Icon" class="services-icon">
+                Roof Repair
+            </div>
+            <div class="col-3 text-center">
+                <img src="imgs/network-maintenance.svg" alt="Network Infrastructure Icon" class="services-icon">
+                Network Infrastructure
+            </div>
+        </div>
+    </div>
+    <!-- END Our Services -->
+
+    <!-- Projects -->
+    <div class="container-projects container-fluids">
+        <h3 class="text-uppercase">See Some of Our Projects</h3>
+        <div class="row justify-content-around">
+            <div class="col-3 text-center"><img src="imgs/new-york.jpg" alt="New York Image" class="project-city-img"></div>
+            <div class="col-3 text-center"><img src="imgs/connecticut.jpg" alt="Connecticut Image" class="project-city-img"></div>
+            <div class="col-3 text-center"><img src="imgs/new-jersey.jpg" alt="New Jersey Image" class="project-city-img"></div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -153,7 +228,9 @@
                     <div class="col-md-3 col-6 mb-md-0 mb-4">
                         <!-- Links -->
                         <h5 class="font-weight-bold">Newsletter</h5>
-                        <input class="input-newsletter form-control form-control-sm mb-2" type="text" placeholder="Enter your email">
+                        <div class="form-row mb-2 pl-1">
+                            <input class="input-newsletter form-control form-control-sm col-lg-8 col-sm-9" type="text" placeholder="Enter your email">
+                        </div>
                         <button class="btn btn-primary btn-sm">Subscribe</button>
                     </div>
                     <!-- END Grid column -->
