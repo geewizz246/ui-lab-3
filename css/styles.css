@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/**************************************************************************************************************
+ *  GLOBAL ITEMS
+ **************************************************************************************************************/
+
+body {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.app-scheme {
+    color: #3E98B7;
+}
+
+.footer-container {
+    color: white;
+    background-color: #171515;
+}
+
+.footer-link {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.social-link {
+    font-size: 1.5em;
+    padding: 0 0.1em;
+}
+
+.navbar {
+    background-color: #EDEDED;
+}
+
+.nav-item {
+    padding: 0 0.3em;
+}
+
+.active {
+    border-bottom: 2px solid #3E98B7;
+}
+
+/* Sign Up Button */
+.btn.btn-nav-sign-up {
+    color: #ffffff;
+    background-color: #3E98B7;
+    border-color: #3E98B7;
+}
+.btn.btn-nav-sign-up:hover {
+    color: #ffffff;
+    background-color: #3788A4;
+    border-color: #317992;
+}
+.btn.btn-nav-sign-up:focus, .btn.btn-nav-sign-up.focus {
+    box-shadow: 0 0 0 0.2rem #255B6D;
+}
+.btn.btn-nav-sign-up.disabled, .btn.btn-nav-sign-up:disabled {
+    color: #ffffff;
+    background-color: #3E98B7;
+    border-color: #3E98B7;
+}
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled):active,
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled).active {
+    color: #ffffff;
+    background-color: #317992;
+    border-color: #2B6A80;
+}
+.show > .btn.btn-nav-sign-up.dropdown-toggle {
+    color: #ffffff;
+    background-color: #317992;
+    border-color: #2B6A80;
+}
+.show > .btn.btn-nav-sign-up.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(49, 122, 146, 0.5);
+}
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled):active:focus,
+.btn.btn-nav-sign-up:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(49, 122, 146, 0.5);
+}
+
+/* Login Button */
+.btn-login {
+    color: inherit;
+    text-decoration: none;
+}
+.btn-login:hover {
+     color: inherit; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+
+
+
+
+
+/**************************************************************************************************************
+ *  HOMEPAGE ITEMS
+ **************************************************************************************************************/
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-overlay {
+        top: 250px !important;
+    }
+}
+
+/* Hero Section */
+.hero-overlay {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+}
+
+.container-hero-img {
+    background-color: #3E98B7;
+}
+
+.img-hero {
+    object-fit: cover;
+    object-position: 100% 90%;
+    opacity: 0.5;
+    height: 750px;
+    z-index: 0;
+}
+
+.text-hero-header,.text-hero-plain {
+    color: white;
+    z-index: 1;
+}
+.text-hero-header {
+    /* font-family: 'Muli', sans-serif; */
+    font-size: 2.4em;
+    font-weight: 900;
+}
+.text-hero-plain {
+    font-size: 1.8em;
+    max-width: 75%;
+}
+
+.btn.btn-hero {
+    position: relative;
+    z-index: 2;
+}
+.btn.btn-learn-more {
+    color: #b73e6a;
+    background-color: white;
+    border: 2px solid #b73e6a;
+}
+.btn.btn-request {
+    color: white;
+    background-color: #b73e6a;
+    border: 2px solid white;
+}
+
+.container-about-us {
+    position: relative;
+    top: -50px;
+}
+
+.card-title-underline {
+    border-top: 3px solid black;
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+/**************************************************************************************************************
+ *  SIGNUP PAGE ITEMS
+ **************************************************************************************************************/
+
+.sign-up-background {
+    background-image: linear-gradient(#255B6D, #47a4c3);
+}
+
+.sign-up-header p {
+    font-size: 1.5em;
+    margin-top: -15px;
+}
+
+.btn-submit {
+    color: white;
+    background-color: #b73e6a;
+    font-size: 1.5em;
+}
+
+.label-sm {
+    font-size: 0.75em;
+    margin-bottom: -0.2em;
+}
