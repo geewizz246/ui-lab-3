@@ -9,9 +9,12 @@ body {
     font-family: 'Rubik', sans-serif !important;
 }
 
-.app-scheme {
-    color: #3E98B7;
-}
+/* COLOURS */
+.app-scheme { color: #3E98B7; }
+.text-white { color: white; }
+.text-scheme-1 { color: #3788A4; }
+.text-scheme-2 { color: #317992; }
+.text-scheme-3 { color: #2B6A80; }
 
 .footer-container {
     color: white;
@@ -100,17 +103,10 @@ body {
  *  HOMEPAGE ITEMS
  **************************************************************************************************************/
 
-@media (max-width: 768px) {
-    /* Hero Section */
-    .hero-overlay {
-        top: 250px !important;
-    }
-}
-
 /* Hero Section */
 .hero-overlay {
     position: absolute;
-    top: 400px;
+    top: 350px;
     left: 0;
     right: 0;
 }
@@ -187,20 +183,73 @@ body {
     position: relative;
     top: -50px;
     background-color: #333333;
-    padding: 2em 10em 3.5em;
 }
-.container-projects h3 {
+
+.about-us-title, .services-title, .projects-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.projects-title {
     color: white;
-    padding-bottom: 1em;
+    padding: 0 3em 1em;
 }
 
 .project-city-img {
-    width: 375px;
+    width: 100%;
     height: 300px;
     opacity: 0.6;
     border-radius: 5px;
     object-fit: cover;
     box-shadow: 0 5px 10px 3px black;
+    z-index: 4;
+}
+
+.project-city-container {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.project-city-title {
+    position: relative;
+    top: -160px;
+    left: 0;
+    right: 0;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 0.4em 1em;
+    z-index: 5;
+}
+
+.project-city-title:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-overlay {
+        top: 250px !important;
+    }
+
+    /* Projects Section */
+    .projects-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Projects Section */
+    .projects-title {
+        padding: 0 1em 1em;
+    }
 }
 
 
@@ -215,7 +264,7 @@ body {
  **************************************************************************************************************/
 
 .sign-up-background {
-    background-image: linear-gradient(#255B6D, #47a4c3);
+    background-image: linear-gradient(#255B6D, #58c2e5);
 }
 
 .sign-up-header p {
