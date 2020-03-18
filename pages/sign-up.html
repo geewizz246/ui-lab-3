@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="sign-up-background">
+    <div class="gradient-background-1">
         <div class="row justify-content-center mx-auto py-5">
             <div class="card col-xl-6 col-lg-7 col-md-10 col-11 shadow-lg">
                 <div class="card-body"> 
                     <!-- Sign Up Header -->
-                    <div class="sign-up-header container-fluid mb-4">
+                    <div class="sign-up-header form-header container-fluid mb-4">
                         <div class="row">
                             <img class="img-logo mx-auto d-block" src="../imgs/logo-placeholder.png" alt="Logo" width="150">
                         </div>
                         <div class="row">
-                            <p class="app-scheme mx-auto">Sign Up for Online Services</p>
+                            <h3 class="app-scheme mx-auto form-title">Sign Up for Online Services</h3>
                         </div>
                     </div>
                     <!-- END Sign Up Header -->
@@ -34,64 +34,117 @@
                     <div class="container">
                         <div class="row">
                             <form action="sign-up-success.html" class="col-lg-10 col-md-9 mx-auto">
+                                <h5>Account Information</h5>
                                 <div class="form-group">
-                                    <input id="sign-up-input-acct-num" class="form-control" type="text" placeholder="Prime Service Account #" pattern="[0-9]{6}" required>
-                                    <label for="sign-up-input-acct-num" class="label-sm">Refer to your 6 digit account number.</label>
-                                </div>
-                                <div class="form-row mb-3">
-                                    <div class="col pr-lg-3">
-                                        <input id="sign-up-input-first-name" class="form-control" type="text" placeholder="First Name" required>
-                                    </div>
-                                    <div class="col pl-3">
-                                        <input id="sign-up-input-last-name" class="form-control" type="text"  placeholder="Last Name" required>
-                                    </div>
-                                </div>
-                                <!-- Gender -->
-                                <div class="form-check form-check-inline mb-3">
-                                    <span class="pr-4">Gender: </span>
-                                    <input id="sign-up-input-gender-male" class="form-check-input" type="radio" name="sign-up-gender-radios" value="male" required>
-                                    <label class="form-check-label" for="sign-up-input-gender-male">Male</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input id="sign-up-input-gender-female" class="form-check-input" type="radio" name="sign-up-gender-radios" value="female" required>
-                                    <label class="form-check-label" for="sign-up-input-gender-female">Female</label>
-                                </div>
-                                <!-- END Gender -->
-                                <div class="form-group">
-                                    <input id="sign-up-input-username" class="form-control" type="text"  placeholder="Username" required>
-                                </div>
-                                <div class="form-group">
-                                    <input id="sign-up-input-email" class="form-control" type="email"  placeholder="Email (e.g. email@domain.com)" required>
-                                </div>
-                                <div class="form-group">
-                                    <input id="sign-up-input-phone" class="form-control" type="tel" placeholder="Phone (e.g. 800-123-4567)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
-                                </div>
-                                <div class="form-group">
-                                    <input id="sign-up-input-password"  class="form-control" type="password"  placeholder="Password" required>
-                                    <label for="sign-up-input-password" class="label-sm">Make it nice and strong (at least 8 characters).</label>
-                                </div>
-                                <div class="form-group">
-                                    <input id="sign-up-input-confirm-password"  class="form-control" type="password"  placeholder="Confirm Password" required>
-                                </div>
-                                <hr class="clearfix w-100">
-                                <h4>Mailing Address</h4>
-                                <div class="form-group">
-                                    <input id="sign-up-input-street-addr" class="form-control" type="text" placeholder="Street Address" required>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-6">
-                                        <input id="sign-up-input-city-addr" class="form-control" type="text" placeholder="City" required>
-                                    </div>
-                                    <div class="form-group col-4">
-                                        <input id="sign-up-input-state-addr" class="form-control" type="text" placeholder="State" required>
-                                    </div>
-                                    <div class="form-group col-2">
-                                        <input id="sign-up-input-zip-addr" class="form-control" type="text" placeholder="Zip" required>
-                                    </div>
+                                    <label for="sign-up-input-acct-num">Prime Service Account #</label>
+                                    <input id="sign-up-input-acct-num" class="form-control" type="text" pattern="[0-9]{6}" required>
+                                    <label for="sign-up-input-acct-num" class="label-sm text-secondary">Refer to your 6 digit account number</label>
                                 </div>
 
-                                <div class="row my-4">
-                                    <button class="btn btn-submit px-3 mx-auto" type="submit">Sign Up</button>
+                                <div class="form-group">
+                                    <label for="sign-up-input-username">Username</label>
+                                    <input id="sign-up-input-username" class="form-control" type="text" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sign-up-input-email">Email</label>
+                                    <input id="sign-up-input-email" class="form-control" type="email"required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sign-up-input-phone">Phone</label>
+                                    <input id="sign-up-input-phone" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                    <label for="sign-up-input-phone" class="label-sm text-secondary">E.g. 800-123-4567</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="sign-up-input-password">Password</label>
+                                    <input id="sign-up-input-password"  class="form-control" type="password" pattern=".{8,}" required>
+                                    <label for="sign-up-input-password" class="label-sm text-secondary">Must be at least 8 characters</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sign-up-input-confirm-password">Confirm Password</label>
+                                    <input id="sign-up-input-confirm-password"  class="form-control" type="password" pattern=".{8,}" required>
+                                </div>
+
+                                <hr class="clearfix w-100">
+                                <h5>Personal Information</h5>
+                                <div class="form-group">
+                                    <label for="sign-up-input-first-name">First Name</label>
+                                    <input id="sign-up-input-first-name" class="form-control" type="text" required>
+                                </div> 
+                                <div class="form-group">
+                                    <label for="sign-up-input-last-name">Last Name</label>
+                                    <input id="sign-up-input-last-name" class="form-control" type="text" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sign-up-input-other-names">Other Name(s)</label>
+                                    <input id="sign-up-input-other-names" class="form-control" type="text">
+                                    <label for="sign-up-input-other-names" class="label-sm text-danger">*Optional</label>
+                                </div>
+
+                                <!-- Gender -->
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <div class="col-fdiv col-3 pt-0">Gender</div>
+                                        <div class="col-9">
+                                            <div class="form-check">
+                                                <input id="sign-up-input-gender-male" class="form-check-input" type="radio" name="sign-up-gender-radios" value="male" required>
+                                                <label class="form-check-label" for="sign-up-input-gender-male">Male</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input id="sign-up-input-gender-female" class="form-check-input" type="radio" name="sign-up-gender-radios" value="female" required>
+                                                <label class="form-check-label" for="sign-up-input-gender-female">Female</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <!-- END Gender -->
+
+                                <div class="form-group">
+                                    <label for="sign-up-input-street-addr">Street Address</label>
+                                    <input id="sign-up-input-street-addr" class="form-control" type="text" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label for="sign-up-input-city-addr">City</label>
+                                        <select id="sign-up-input-city-addr" class="form-control" required>
+                                            <option value="" hidden>Select your city</option>
+                                            <option value="1">City 1</option>
+                                            <option value="2">City 2</option>
+                                            <option value="0">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-8">
+                                        <label for="sign-up-input-state-addr">State</label>
+                                        <select id="sign-up-input-state-addr" class="form-control" required>
+                                            <option value="" hidden>Select your state</option>
+                                            <option value="1">State 1</option>
+                                            <option value="2">State 2</option>
+                                            <option value="0">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-4">
+                                        <label for="sign-up-input-zip-addr">Zip</label>
+                                        <input id="sign-up-input-zip-addr" class="form-control" type="text" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sign-up-input-country-addr">Country</label>
+                                    <select id="sign-up-input-country-addr" class="form-control" required>
+                                        <option value="" hidden>Select your country</option>
+                                        <option value="1">Country 1</option>
+                                        <option value="2">Country 2</option>
+                                        <option value="0">...</option>
+                                    </select>
+                                </div>
+
+                                <div class="row mt-4 mb-4">
+                                    <button class="btn btn-submit px-3 mx-auto" type="submit">Sign up</button>
+                                </div>
+
+                                <div class="text-center">
+                                    <small>Already have an account? <a href="login.html">Login now.</a></small>
                                 </div>
                             </form>
                         </div>
@@ -103,84 +156,12 @@
 
         <!-- Footer -->
         <footer>
-            <img class="img-fluid w-100 mt-5" src="../imgs/footer-img.png" alt="Footer Image">
-            
-            <div class="footer-container">
-                <!-- Footer Links -->
-                <div class="container-fluid text-md-left pt-4">
-                    <!-- Grid row -->
-                    <div class="row d-md-flex justify-content-center justify-content-sm-around text-center text-sm-left">
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-6 mb-md-0 mb-3">
-                            <!-- Content -->
-                            <h5 class="font-weight-bold">Helpful Links</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="footer-link">Terms and Condition</a></li>
-                                <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                                <li><a href="#" class="footer-link">Customer Support</a></li>
-                                <li><a href="#" class="footer-link">Make a Request</a></li>
-                            </ul>
-                        </div>
-                        <!-- END Grid column -->
-
-                        <hr class="clearfix w-100 d-sm-none">
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-6 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="font-weight-bold">Information</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#" class="footer-link">About Us</a></li>
-                                <li><a href="#" class="footer-link">Services</a></li>
-                                <li><a href="#" class="footer-link">Blog</a></li>
-                                <li><a href="#" class="footer-link">Testimontials</a></li>
-                                <li><a href="#" class="footer-link">Careers</a></li>
-                            </ul>
-                        </div>
-                        <!-- END Grid column -->
-
-                        <hr class="clearfix w-100 d-md-none">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-6 mb-md-0 mb-4">
-                            <!-- Links -->
-                            <h5 class="font-weight-bold">Newsletter</h5>
-                            <input class="input-newsletter col-6 form-control form-control-sm mb-2" type="text" placeholder="Enter your email">
-                            <button class="btn btn-primary btn-sm">Subscribe</button>
-                        </div>
-                        <!-- END Grid column -->
-
-                        <hr class="clearfix w-100 d-sm-none">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-6 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="font-weight-bold">Contact Us</h5>
-                            <ul class="list-unstyled mb-4">
-                                <li class="footer-link">Phone: (800) 555-3567</li>
-                                <li class="footer-link">Email: primeservice@gmail.com</li>
-                            </ul>
-
-                            <h5 class="font-weight-bold">Follow Us</h5>
-                            <ul class="list-inline list-unstyled text-secondary">
-                                <li class="list-inline-item">
-                                    <a class="text-reset social-link" href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="text-reset social-link" href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="text-reset social-link" href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- END Grid column -->
-                    </div>
-                    <!-- Grid row -->
+            <div class="footer-container mt-5">
+                <div class="text-center py-3 d-flex justify-content-center align-items-center">
+                    <a href="#" class="px-3" style="color: rgb(0, 200, 255);">Privacy Policy</a>
+                    <div class="footer-copyright px-3">© 2020 Prime Service</div>
+                    <a href="#" class="px-3" style="color: rgb(0, 200, 255);">Terms of Service</a>
                 </div>
-                <!-- Footer Links -->
-
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2020 Prime Service
-                </div>
-                <!-- Copyright -->
             </div>
         </footer>
         <!-- Footer -->

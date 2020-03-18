@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sign Up - Prime Service</title>
+    <title>My Profile - Prime Service</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">HOME</a>
+                        <a class="nav-link" href="../index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ABOUT US</a>
@@ -54,7 +54,7 @@
                     class="btn dropdown-toggle d-flex align-items-center" 
                     role="button" id="btn-dropdown-menu" data-toggle="dropdown" aria-haspopup="true" 
                     aria-expanded="false">
-                    <span class="align-self-center pr-2">Hi, User</span>
+                    <span class="align-self-center pr-2">Hi, John</span>
                     <i class="fa fa-user-circle pr-1" style="font-size: 2em;"></i>
                 </a>
 
@@ -73,17 +73,303 @@
         </nav>
         <!-- END Navbar -->
     </div>
-    
-    <!-- Sign Up Header -->
-    <div class="sign-up-header container-fluid">
-        <div class="row">
-            <img class="img-logo mx-auto d-block" src="../imgs/logo-placeholder.png" width=160 alt="Logo">
+
+    <div class="container-fluid">
+        <!-- Edit Profile Container -->
+        <div class="container-edit-profile row my-md-4 my-2 p-md-3 p-2">
+            <div class="col-lg-2 col-md-3">
+                <div id="exit" class="exit-btn d-none">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="user-profile row justify-content-center text-center">
+                    <ul class="list-unstyled">
+                        <li class="list-item"><i class="fa fa-user-circle pr-1 fa-5x"></i></li>
+                        <li class="list-item mt-2"><h5>John Doe</h5></li>
+                        <li class="list-item mt-n1"><h6>@john.doe</h6></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10 col-9">
+                <div id="v-pills-tab-container" class="tab-nav-container">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-profile" aria-selected="false">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="v-pills-sign-out-tab" data-toggle="pill" href="#v-pills-sign-out" role="tab" aria-controls="v-pills-sign-out" aria-selected="false">Sign Out</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="v-pills-close-account-tab" data-toggle="pill" href="#v-pills-close-account" role="tab" aria-controls="v-pills-close-account" aria-selected="false">Close Account</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="v-pills-tab-content">
+
+                    <!-- Profile Pane -->
+                    <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <!-- <h3 class="tab-title">Profile</h3> -->
+                        <h5 class="tab-subtitle mb-4">Edit your profile information here</h5>
+
+                        <form class="col-lg-8 col-md-10 col-12" action="#">
+                            <div class="input-edit-names mb-4">
+                                <div class="row">
+                                    <div class="col-10 mb-3">
+                                        <label for="input-edit-first-name">First Name</label>
+                                        <input id="input-edit-first-name" class="form-control" type="text" placeholder="Enter your first name" value="John">
+                                    </div>
+                                    <div class="col-10 mb-3">
+                                        <label for="input-edit-last-name">Last Name</label>
+                                        <input id="input-edit-last-name" class="form-control" type="text" placeholder="Enter your last name" value="Doe">
+                                    </div>
+                                    <div class="col-10">
+                                        <label for="input-edit-other-name">Other Name(s)</label>
+                                        <input id="input-edit-other-name" class="form-control" type="text" placeholder="Enter any other names" value="Abel">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-edit-emails mb-4">
+                                <div id="email-container-0" class="form-group row">
+                                    <div class="col-10">
+                                        <label for="input-edit-email-0">Primary Email</label>
+                                        <input id="input-edit-email-0" class="form-control" type="email" placeholder="Primary email address" value="john.doe@outlook.com">
+                                    </div>
+                                </div>
+                                <div id="email-container-1" class="form-group row d-none">
+                                    <div class="col-10">
+                                        <label for="input-edit-email-1">Email #1</label>
+                                        <input id="input-edit-email-1" class="form-control" type="email" placeholder="Alternative email address #1">
+                                    </div>
+                                    <button class="btn btn-remove-element col-2 mt-4" type="button">
+                                        <i class="fa fa-minus-circle fa-2x text-danger"></i>
+                                    </button>
+                                </div>
+                                <div id="email-container-2" class="form-group row d-none">
+                                    <div class="col-10">
+                                        <label for="input-edit-email-2">Email #2</label>
+                                        <input id="input-edit-email-2" class="form-control" type="email" placeholder="Alternative email address #2">
+                                    </div>
+                                    <button class="btn btn-remove-element col-2 mt-4" type="button">
+                                        <i class="fa fa-minus-circle fa-2x text-danger"></i>
+                                    </button>
+                                </div>
+
+                                <button id="btn-add-email" class="btn btn-primary" type="button">Add email</button>
+                            </div>
+                            
+                            <div class="input-edit-phones mb-4">
+                                <div id="phone-container-0" class="form-group row">
+                                    <div class="col-10">
+                                        <label for="input-edit-phone-0">Primary Phone Number</label>
+                                        <input id="input-edit-phone-0" class="form-control" type="tel" placeholder="Primary phone number" value="(800) 123-4567">
+                                    </div>
+                                </div>
+                                <div id="phone-container-1" class="form-group row d-none">
+                                    <div class="col-10">
+                                        <label for="input-edit-phone-1">Phone #1</label>
+                                        <input id="input-edit-phone-1" class="form-control" type="tel" placeholder="Alternative phone number #1">
+                                    </div>
+                                    <button class="btn btn-remove-element col-2 mt-4" type="button">
+                                        <i class="fa fa-minus-circle fa-2x text-danger"></i>
+                                    </button>
+                                </div>
+                                <div id="phone-container-2" class="form-group row d-none">
+                                    <div class="col-10">
+                                        <label for="input-edit-phone-2">Phone #2</label>
+                                        <input id="input-edit-phone-2" class="form-control" type="tel" placeholder="Alternative phone number #2">
+                                    </div>
+                                    <button class="btn btn-remove-element col-2 mt-4" type="button">
+                                        <i class="fa fa-minus-circle fa-2x text-danger"></i>
+                                    </button>
+                                </div>
+
+                                <button id="btn-add-phone" class="btn btn-primary" type="button">Add phone</button>
+                            </div>
+
+                            <div class="input-edit-addresses">
+                                <div id="address-container-0" class="form-group row">
+                                    <div class="col-10">
+                                        <label>Primary Mailing Address</label>
+                                        <div class="form-group">
+                                            <input id="input-street-addr-0" class="form-control" type="text" placeholder="Street Address">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-6">
+                                                <input id="input-city-addr-0" class="form-control" type="text" placeholder="City">
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <input id="input-state-addr-0" class="form-control" type="text" placeholder="State">
+                                            </div>
+                                            <div class="form-group col-2">
+                                                <input id="input-zip-addr-0" class="form-control" type="text" placeholder="Zip">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="address-container-1" class="form-group row d-none">
+                                    <div class="col-10">
+                                        <label>Alternative Mailing Address #1</label>
+                                        <div class="form-group">
+                                            <input id="input-street-addr-1" class="form-control" type="text" placeholder="Street Address">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-6">
+                                                <input id="input-city-addr-1" class="form-control" type="text" placeholder="City">
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <input id="input-state-addr-1" class="form-control" type="text" placeholder="State">
+                                            </div>
+                                            <div class="form-group col-2">
+                                                <input id="input-zip-addr-1" class="form-control" type="text" placeholder="Zip">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-remove-element col-2 mt-4" type="button">
+                                        <i class="fa fa-minus-circle fa-2x text-danger"></i>
+                                    </button>
+                                </div>
+                                <div id="address-container-2" class="form-group row d-none">
+                                    <div class="col-10">
+                                        <label>Alternative Mailing Address #2</label>
+                                        <div class="form-group">
+                                            <input id="input-street-addr-2" class="form-control" type="text" placeholder="Street Address">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-6">
+                                                <input id="input-city-addr-2" class="form-control" type="text" placeholder="City">
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <input id="input-state-addr-2" class="form-control" type="text" placeholder="State">
+                                            </div>
+                                            <div class="form-group col-2">
+                                                <input id="input-zip-addr-2" class="form-control" type="text" placeholder="Zip">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-remove-element col-2 mt-4" type="button">
+                                        <i class="fa fa-minus-circle fa-2x text-danger"></i>
+                                    </button>
+                                </div>
+
+                                <button id="btn-add-address" class="btn btn-primary" type="button">Add address</button>
+                            </div>
+
+                            <div class="btn-edit-container text-center my-5">
+                                <button class="btn btn-success mr-3" type="submit">Save</button>
+                                <button class="btn btn-danger" type="reset">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Profile Pane -->
+                    
+                    <!-- Account Pane -->
+                    <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                        <!-- <h3 class="tab-title">Account</h3> -->
+                        <h5 class="tab-subtitle mb-4">Edit your account information here</h5>
+
+                        <form class="col-md-6 col-9" action="#">
+                            <h6 class="row">Change your password</h6>
+                            <div class="input-edit-passwords mb-4">
+                                <div id="curr-password-container" class="form-group row">
+                                    <label for="input-edit-curr-password">Current Password</label>
+                                    <input id="input-edit-curr-password" class="form-control" type="password" placeholder="Enter your current password">
+                                </div>
+                                <div id="new-password-container" class="form-group row">
+                                    <label for="input-edit-new-password">New Password</label>
+                                    <input id="input-edit-new-password" class="form-control" type="password" placeholder="Enter your new password">
+                                </div>
+                                <div id="confirm-password-container" class="form-group row">
+                                    <label for="input-edit-confirm-password">Confirm Password</label>
+                                    <input id="input-edit-confirm-password" class="form-control" type="password" placeholder="Confirm password">
+                                </div>
+                            </div>
+
+                            <h6 class="row">Security questions</h6>
+                            <div class="input-edit-security-ques mb-4">
+                                <div id="security-ques-container-0" class="form-group row mb-2">
+                                    <label for="input-edit-ques-0">1st Question</label>
+                                    <select id="input-edit-ques-0" class="form-control">
+                                        <option value="0" disabled selected>Select a question</option>
+                                        <option value="1">Question 1</option>
+                                        <option value="2">Question 2</option>
+                                        <option value="33">Question 3</option>
+                                        <option value="4">Question 4</option>
+                                        <option value="5">Question 5</option>
+                                        <option value="6">Question 6</option>
+                                        <option value="7">Question 7</option>
+                                        <option value="8">Question 8</option>
+                                        <option value="9">Question 9</option>
+                                        <option value="10">Question 10</option>
+                                    </select>
+                                </div>
+                                <div id="security-ans-container-0" class="form-group row mb-3">
+                                    <label for="input-edit-ans-0">Answer</label>
+                                    <input id="input-edit-ans-0" class="form-control" type="text" placeholder="Enter your answer">
+                                </div>
+
+                                <div id="security-ques-container-1" class="form-group row mb-2">
+                                    <label for="input-edit-ques-1">2nd Question</label>
+                                    <select id="input-edit-ques-1" class="form-control">
+                                        <option value="0" disabled selected>Select a question</option>
+                                        <option value="1">Question 1</option>
+                                        <option value="2">Question 2</option>
+                                        <option value="33">Question 3</option>
+                                        <option value="4">Question 4</option>
+                                        <option value="5">Question 5</option>
+                                        <option value="6">Question 6</option>
+                                        <option value="7">Question 7</option>
+                                        <option value="8">Question 8</option>
+                                        <option value="9">Question 9</option>
+                                        <option value="10">Question 10</option>
+                                    </select>
+                                </div>
+                                <div id="security-ans-container-1" class="form-group row mb-3">
+                                    <label for="input-edit-ans-1">Answer</label>
+                                    <input id="input-edit-ans-1" class="form-control" type="text" placeholder="Enter your answer">
+                                </div>
+
+                                <div id="security-ques-container-2" class="form-group row mb-2">
+                                    <label for="input-edit-ques-2">3rd Question</label>
+                                    <select id="input-edit-ques-2" class="form-control">
+                                        <option value="0" disabled selected>Select a question</option>
+                                        <option value="1">Question 1</option>
+                                        <option value="2">Question 2</option>
+                                        <option value="33">Question 3</option>
+                                        <option value="4">Question 4</option>
+                                        <option value="5">Question 5</option>
+                                        <option value="6">Question 6</option>
+                                        <option value="7">Question 7</option>
+                                        <option value="8">Question 8</option>
+                                        <option value="9">Question 9</option>
+                                        <option value="10">Question 10</option>
+                                    </select>
+                                </div>
+                                <div id="security-ans-container-2" class="form-group row mb-3">
+                                    <label for="input-edit-ans-2">Answer</label>
+                                    <input id="input-edit-ans-2" class="form-control" type="text" placeholder="Enter your answer">
+                                </div>
+                            </div>
+
+                            <div class="btn-edit-container text-center my-5">
+                                <button class="btn btn-success btn-save-changes mr-3" type="submit">Save</button>
+                                <button class="btn btn-danger btn-save-changes" type="reset">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Account Pane -->
+                    
+                    <div class="tab-pane fade" id="v-pills-sign-out" role="tabpanel" aria-labelledby="v-pills-sign-out-tab">...</div>
+                    <div class="tab-pane fade" id="v-pills-close-account" role="tabpanel" aria-labelledby="v-pills-close-account-tab">...</div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <p class="app-scheme mx-auto">Sign Up for Online Services</p>
-        </div>
+        <!-- END Edit Profile Container -->
+
+        <!-- -->
     </div>
-    <!-- END Sign Up Header -->
 
     <!-- Footer -->
     <footer>
@@ -174,5 +460,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Our JS -->
+    <script src="../js/main.js"></script>
 </body>
 </html>
