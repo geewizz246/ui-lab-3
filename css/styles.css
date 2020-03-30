@@ -10,6 +10,7 @@ body {
 }
 
 label {
+    font-size: 0.9em;
     margin-bottom: 0.2em !important;
 }
 
@@ -138,7 +139,6 @@ label {
     z-index: 1;
 }
 .text-hero-header {
-    /* font-family: 'Muli', sans-serif; */
     font-size: 2.4em;
     font-weight: 900;
 }
@@ -207,17 +207,25 @@ label {
 
 .project-city-img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     opacity: 0.6;
     border-radius: 5px;
     object-fit: cover;
-    box-shadow: 0 5px 10px 3px black;
     z-index: 4;
+    transition: transform .5s, filter .5s ease;
 }
 
 .project-city-container {
+    height: 300px;
+    overflow:hidden;
     background-color: black;
+    box-shadow: 0 5px 10px 3px black;
     border-radius: 5px;
+}
+
+.project-city-img:hover {
+    transform: scale(1.25);
+    filter: blur(1px);
 }
 
 .project-city-title {
@@ -306,6 +314,24 @@ label {
     color: white;
 }
 
+.tab-subtitle {
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+.tab-subtitle-underline {
+    margin-top: -10px;
+    border-top: 3px solid black;
+    width: 10em;
+    margin-bottom: 3em;
+}
+
+.btn-remove-element.col-1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 
 
@@ -328,42 +354,16 @@ label {
     .projects-title {
         text-align: center;
     }
-
-    /* Edit Profile Nav */
-    .tab-nav-container {
-        position: fixed;
-        width: 30%;
-        top: 0;
-        left: 0;
-        padding: 1em 0 0;
-        margin-top: 0;
-        text-align: left;
-        background-color: #EDEDED;
-        height: 100%;
-        z-index: 7;
-    }
-
-
-    .tab-nav-container>.nav-pills>.nav-link {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin: 0;
-    }
-
-    .exit-btn {
-        display: block !important;
-        margin: 5px 0;
-        padding: 0 0.6em;
-        font-size: 1.3em;
-        text-align: right;
-        cursor: pointer;
-    }
 }
 
 @media (max-width: 576px) {
     /* Projects Section */
     .projects-title {
         padding: 0 1em 1em;
+    }
+
+    /* Edit Profile Nav */
+    .tab-nav-container>.nav-pills>.nav-item>.nav-link {
+        font-size: 0.9em;
     }
 }
