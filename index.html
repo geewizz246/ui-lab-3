@@ -31,6 +31,7 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="./index.html">HOME</a>
+                        <hr class="nav-link-underline">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ABOUT US</a>
@@ -83,8 +84,8 @@
     <div class="container-about-us row justify-content-center mx-auto">
         <div class="card card-about-us col-md-10 col-sm-9 col-11 shadow">
             <div class="card-body mx-n4"> 
-                <h3 class="about-us-title text-scheme-2 text-center text-uppercase mt-md-4">About Us</h3>
-                <hr class="card-title-underline">
+                <h3 class="about-us-title text-scheme-2 text-center text-uppercase mt-md-4 mt-3">About Us</h3>
+                <hr class="title-underline">
                 <div class="row justify-content-center mb-4">
                     <p class="col-10 col-md-9 pt-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -186,7 +187,7 @@
     <!-- END Our Services -->
 
     <!-- Projects -->
-    <div class="container-projects container-fluids py-5 px-lg-5 px-md-3 px-sm-4 px-5">
+    <div class="container-projects container-fluid py-5 px-lg-5 px-md-3 px-sm-4 px-5">
         <h3 class="projects-title text-uppercase">See Some of Our Projects</h3>
         <div class="row justify-content-around">
             <div class="col-lg-4 col-md-4 col-sm-8 col-12 px-lg-5 text-center">
@@ -214,6 +215,93 @@
         </div>
     </div>
     <!-- END Projects -->
+
+    <!-- Testimonials -->
+    <div class="container-testimonials container mb-5 py-3"> 
+        <h3 class="testimonials-title text-scheme-2 text-center text-uppercase mt-md-4 mt-3">Testimonials</h3>
+        <hr class="title-underline">
+        <div id="testimonials-carousel" class="carousel slide mt-5" data-ride="carousel">
+            <ol class="carousel-indicators mt-4">
+                <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+                <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <span class="quote-top">&#8220;</span> -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <img class="testimonial-img py-2" src="imgs/business-person-circle-1.png" alt="Business Person 1">
+                        </div>
+                        <div class="col-lg-7 col-10">
+                            <img class="testimonial-company-logo d-block mx-auto" src="imgs/testimonial-company-logo-1.png" alt="Company Logo">
+                            <blockquote class="testimonial-body mb-4 text-lg-left text-center">
+                                Magnis dis parturient montes nascetur ridiculus. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. 
+                                A lacus vestibulum sed arcu non.
+                            </blockquote>
+                            <h6 class="testimonial-person-title mt-4 font-italic align-items-center justify-content-lg-start justify-content-center d-flex">
+                                <span class="text-right">Jordan Bremavich</span> 
+                                <span class="text-separator">&#x2E31;</span>
+                                <span class="text-left">Safety Specialist, MTA</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <!-- <span class="quote-bottom">&#8221;</span> -->
+                </div>
+                <div class="carousel-item">
+                    <!-- <span class="quote-top">&#8220;</span> -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <img class="testimonial-img py-2" src="imgs/business-person-circle-2.png" alt="Business Person 2">
+                        </div>
+                        <div class="col-lg-7 col-10">
+                            <img class="testimonial-company-logo d-block mx-auto" src="imgs/testimonial-company-logo-2.png" alt="Company Logo">
+                            <blockquote class="testimonial-body mb-4 text-lg-left text-center">
+                                Nunc scelerisque viverra mauris in. Gravida arcu ac tortor dignissim. Mauris ultrices eros in cursus turpis. 
+                                Cras tincidunt lobortis feugiat vivamus. 
+                            </blockquote>
+                            <h6 class="testimonial-person-title mt-4 font-italic align-items-center justify-content-lg-start justify-content-center d-flex">
+                                <span class="text-right">Elizabeth Holmes</span> 
+                                <span class="text-separator">&#x2E31;</span>
+                                <span class="text-left">Store Manager, Walmart</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <!-- <span class="quote-bottom">&#8221;</span> -->
+                </div>
+                <div class="carousel-item">
+                    <!-- <span class="quote-top">&#8220;</span> -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <img class="testimonial-img py-2" src="imgs/business-person-circle-3.png" alt="Business Person 3">
+                        </div>
+                        <div class="col-lg-7 col-10">
+                            <img class="testimonial-company-logo d-block mx-auto" src="imgs/testimonial-company-logo-3.png" alt="Company Logo">
+                            <blockquote class="testimonial-body mb-4 text-lg-left text-center">
+                                Ipsum dolor sit amet consectetur adipiscing. Pharetra sit amet aliquam id diam maecenas. Dui faucibus in ornare quam viverra orci sagittis. 
+                                Ante metus dictum.
+                            </blockquote>
+                            <h6 class="testimonial-person-title mt-4 font-italic align-items-center justify-content-lg-start justify-content-center d-flex">
+                                <span class="text-right">George Peely</span> 
+                                <span class="text-separator">&#x2E31;</span>
+                                <span class="text-left">Franchise Owner, Chick-fil-A</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <!-- <span class="quote-bottom">&#8221;</span> -->
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonials-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonials-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>            
+        </div>
+    </div>
+    <!-- END Testimonials -->
 
     <!-- Footer -->
     <footer>
