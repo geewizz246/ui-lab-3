@@ -141,17 +141,18 @@ label {
     z-index: 1;
 }
 .text-hero-header {
-    font-size: 2.4em;
-    font-weight: 900;
+    font-size: 2.6em;
+    font-weight: 700;
 }
 .text-hero-plain {
-    font-size: 1.8em;
-    max-width: 75%;
+    font-size: 1.6em;
+    max-width: 60%;
 }
 
 .btn.btn-hero {
     position: relative;
     z-index: 2;
+    border-radius: 8px;
 }
 .btn.btn-learn-more {
     color: #b73e6a;
@@ -168,15 +169,16 @@ label {
     background-color: #e2eaed;
 }
 .card-about-us {
-    border-radius: 8px;
+    border-radius: 15px;
     position: relative;
     top: -50px;
     z-index: 3;
 }
 
 .title-underline {
-    border-top: 3px solid black;
+    border-top: 4px solid black;
     width: 60px;
+    margin-top: 0px;
 }
 
 .container-services {
@@ -188,6 +190,7 @@ label {
 
 .services-icon {
     width: 130px;
+    height: 130px;
     display: block;
     margin: 0 auto 10px;
 }
@@ -200,7 +203,7 @@ label {
 
 .about-us-title, .services-title, .projects-title, .testimonials-title {
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
 }
 .projects-title {
@@ -223,7 +226,7 @@ label {
     overflow:hidden;
     background-color: black;
     box-shadow: 0 5px 10px 3px black;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .project-city-img:hover {
@@ -320,6 +323,10 @@ label {
     padding-top: 5em;
 }
 
+.card-form {
+    padding-bottom: 3em;
+}
+
 .form-header .form-title {
     font-size: 1.7em;
     margin-top: -15px;
@@ -329,6 +336,7 @@ label {
     color: white;
     background-color: #b73e6a;
     font-size: 1.5em;
+    width: 8em;
 }
 
 .label-sm {
