@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="login-sign-up-html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     <!-- Our CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="login-sign-up-body">
     <div class="gradient-background-1">
         <div class="row justify-content-center mx-auto py-5">
             <div class="card col-xl-6 col-lg-7 col-md-10 col-11 shadow-lg">
@@ -59,12 +59,22 @@
 
                                 <div class="form-group">
                                     <label for="sign-up-input-password">Password</label>
-                                    <input id="sign-up-input-password"  class="form-control" type="password" pattern=".{8,}" required>
+                                    <div class="input-group">
+                                        <input id="sign-up-input-password input-password" class="form-control" type="password" pattern=".{8,}" required>
+                                        <div class="input-group-append">
+                                            <a href="" class="password-peek input-group-text fa fa-eye"></a>
+                                        </div>
+                                    </div>
                                     <label for="sign-up-input-password" class="label-sm text-secondary">Must be at least 8 characters</label>
                                 </div>
                                 <div class="form-group">
                                     <label for="sign-up-input-confirm-password">Confirm Password</label>
-                                    <input id="sign-up-input-confirm-password"  class="form-control" type="password" pattern=".{8,}" required>
+                                    <div class="input-group">
+                                        <input id="sign-up-input-confirm-password input-password"  class="form-control" type="password" pattern=".{8,}" required>
+                                        <div class="input-group-append">
+                                            <a href="" class="password-peek input-group-text fa fa-eye"></a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <hr class="clearfix w-100">
@@ -155,9 +165,9 @@
         </div>
 
         <!-- Footer -->
-        <footer>
-            <div class="footer-container mt-5">
-                <div class="text-center py-3 d-flex justify-content-center align-items-center">
+        <footer class="footer-fixed">
+            <div class="footer-container">
+                <div class="text-center d-flex justify-content-center align-items-center">
                     <a href="#" class="px-3" style="color: rgb(0, 200, 255);">Privacy Policy</a>
                     <div class="footer-copyright px-3">© 2020 Prime Service</div>
                     <a href="#" class="px-3" style="color: rgb(0, 200, 255);">Terms of Service</a>
@@ -172,5 +182,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Our JS -->
+    <script src="../js/passwords.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="login-sign-up-html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     <!-- Our CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="login-sign-up-body">
     <div class="gradient-background-2">
         <div class="login-container row justify-content-center mx-auto">
             <div class="card col-xl-4 col-lg-5 col-md-7 col-sm-8 col-10 shadow-lg">
@@ -40,7 +40,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="login-input-password">Password</label>
-                                    <input id="login-input-password" type="password" class="form-control" required>
+                                    <div class="input-group">
+                                        <input id="login-input-password input-password" type="password" class="form-control" pattern=".{8,}" required>
+                                        <div class="input-group-append">
+                                            <a href="" class="password-peek input-group-text fa fa-eye"></a>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="row mt-4 mb-4">
@@ -62,7 +67,7 @@
         <!-- Footer -->
         <footer class="footer-fixed">
             <div class="footer-container">
-                <div class="text-center py-3 d-flex justify-content-center align-items-center">
+                <div class="text-center d-flex justify-content-center align-items-center">
                     <a href="#" class="px-3" style="color: rgb(0, 200, 255);">Privacy Policy</a>
                     <div class="footer-copyright px-3">© 2020 Prime Service</div>
                     <a href="#" class="px-3" style="color: rgb(0, 200, 255);">Terms of Service</a>
@@ -77,5 +82,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Our JS -->
+    <script src="../js/passwords.js"></script>
 </body>
 </html>
